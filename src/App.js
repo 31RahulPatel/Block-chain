@@ -12,17 +12,19 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router>
+    // Add basename to match the GitHub Pages repository name
+    <Router basename="/Block-chain">
       <div className="app-container">
         <Header />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} /> {/* Default route */}
             <Route path="/about" element={<About />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/events" element={<Events />} />
             <Route path="/membership" element={<Membership />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="*" element={<Home />} /> {/* Catch-all for invalid paths */}
           </Routes>
         </main>
         <Footer />
