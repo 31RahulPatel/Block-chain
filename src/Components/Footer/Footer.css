@@ -1,0 +1,43 @@
+/* Footer.css */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-links a:hover {
+    color: #f39c12;
+    /* Golden yellow on hover */
+}
+
+.footer .footer-info {
+    font-size: 14px;
+    color: #bbb;
+}
+
+@media (max-width: 768px) {
+    .footer .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer .footer-info {
+        margin-top: 20px;
+    }
+}
