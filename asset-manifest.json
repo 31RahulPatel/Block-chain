@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Block-chain/static/css/main.cde87a2e.css",
-    "main.js": "/Block-chain/static/js/main.297b55d0.js",
-    "static/js/453.ed3810f9.chunk.js": "/Block-chain/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/Block-chain/index.html",
-    "main.cde87a2e.css.map": "/Block-chain/static/css/main.cde87a2e.css.map",
-    "main.297b55d0.js.map": "/Block-chain/static/js/main.297b55d0.js.map",
-    "453.ed3810f9.chunk.js.map": "/Block-chain/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/Home/static/css/main.cde87a2e.css",
+    "main.js": "/Home/static/js/main.af29802f.js",
+    "static/js/453.ed3810f9.chunk.js": "/Home/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Home/index.html",
+    "main.cde87a2e.css.map": "/Home/static/css/main.cde87a2e.css.map",
+    "main.af29802f.js.map": "/Home/static/js/main.af29802f.js.map",
+    "453.ed3810f9.chunk.js.map": "/Home/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cde87a2e.css",
-    "static/js/main.297b55d0.js"
+    "static/js/main.af29802f.js"
   ]
 }
