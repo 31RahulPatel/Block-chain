@@ -1,75 +1,76 @@
 /* Footer.css */
 .footer {
-    background: linear-gradient(135deg, #232526, #414345); /* Gradient background for a modern look */
-    color: #fff;
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #232526, #414345); /* Gradient dark background */
+    color: #eaeaea; /* Light text color for readability */
+    padding: 40px 20px; /* Adequate padding for spacing */
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
-.footer .footer-links {
+.footer-content {
+    max-width: 900px; /* Restrict content width */
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 24px; /* Prominent title */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f39c12; /* Golden color for emphasis */
+}
+
+.footer-description {
+    font-size: 16px; /* Standard font size for description */
+    margin-bottom: 30px;
+    line-height: 1.8; /* Enhance readability */
+    color: #ccc; /* Subtle gray for description text */
+}
+
+.footer-nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    gap: 20px; /* Space between links */
+    flex-wrap: wrap; /* Wrap links for smaller screens */
+    margin-bottom: 30px; /* Space below the links */
 }
 
-.footer .footer-links a {
-    color: #ddd;
+.footer-link {
+    color: #b3b3b3; /* Subtle gray for links */
     text-decoration: none;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 5px 10px; /* Padding for clickable area */
     border-radius: 5px;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
-.footer .footer-links a:hover {
-    background: #f39c12; /* Golden yellow background */
-    color: #fff; /* White text on hover */
+.footer-link:hover {
+    color: #fff; /* Bright text on hover */
+    background: #007bff; /* Blue highlight background */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); /* Subtle hover shadow */
 }
 
-.footer .footer-info {
+.footer-copyright {
     font-size: 14px;
-    color: #aaa;
+    color: #aaa; /* Light gray text for copyright */
     margin-top: 20px;
     line-height: 1.6;
 }
 
-.footer .footer-info strong {
-    color: #fff; /* Highlight important text */
-}
-
-.footer .social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.footer .social-icons a {
-    font-size: 18px;
-    color: #ddd;
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-    transform: scale(1.2); /* Slight zoom on hover */
-    color: #f39c12;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .footer .footer-links {
-        flex-direction: column;
-        gap: 15px;
+    .footer-title {
+        font-size: 20px; /* Reduce title size on smaller screens */
     }
 
-    .footer .footer-info {
-        margin-top: 15px;
+    .footer-description {
+        font-size: 14px; /* Smaller font size for description */
     }
 
-    .footer .social-icons {
-        gap: 10px;
+    .footer-nav {
+        gap: 15px; /* Reduced gap for smaller screens */
+    }
+
+    .footer-link {
+        font-size: 14px; /* Adjust link size */
     }
 }
