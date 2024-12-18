@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css'; // Importing the styles for About page
-
+import ProfessorCard from '../../Components/ProfessorCard/ProfessorCard';
+import StudentCard from '../../Components/StudentCard/StudentCard';
 const About = () => {
     return (
         <div className="about-container">
@@ -35,6 +36,13 @@ const About = () => {
                     Whether you're a beginner or an experienced developer, there’s a place for you in our club. Join us today and be a part of a community that is passionate about pushing the boundaries of blockchain technology.
                 </p>
             </div>
+            <div className="prof">
+                <ProfessorCard />
+            </div>
+            <div className="studentcard">
+                <StudentCard />
+            </div>
+
         </div>
     );
 };

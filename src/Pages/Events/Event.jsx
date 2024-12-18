@@ -1,7 +1,7 @@
 import React from 'react';
 import './Event.css'; // Import styles for Events page
 import EventCard from '../../Components/Eventcard/Eventcard'; // Assuming you have created EventCard.jsx for individual events
-
+import NotificationCard from '../../Components/NotificationCard/NotificationCard';
 const Events = () => {
     // Example data for events (replace with dynamic data or API integration)
     const events = [
@@ -52,6 +52,10 @@ const Events = () => {
                     />
                 ))}
             </div>
+            <div className="notification">
+                <NotificationCard />
+            </div>
+
         </div>
     );
 };

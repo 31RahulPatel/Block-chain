@@ -3,58 +3,83 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
     background-color: #333;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     font-family: Arial, sans-serif;
 }
 
-.header .logo {
+.header-logo .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
     text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
 }
 
-.header nav {
+.header-logo .logo:hover {
+    color: #f39c12;
+}
+
+.header-nav {
     display: flex;
     gap: 20px;
 }
 
-.header nav a {
+.nav-link {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.header nav a:hover {
-    color: #f39c12; /* Golden yellow on hover */
+.nav-link:hover {
+    color: #f39c12;
 }
 
-.header .menu-toggle {
+/* Hamburger menu */
+.menu-toggle {
     display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #f39c12;
 }
 
 @media (max-width: 768px) {
-    .header nav {
+    .header-nav {
         display: none;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #444;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 1px solid #555;
+        z-index: 999;
     }
 
-    .header nav a {
-        padding: 10px;
-    }
-
-    .header .menu-toggle {
-        display: block;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    .header.active nav {
+    .header-nav.active {
         display: flex;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 }

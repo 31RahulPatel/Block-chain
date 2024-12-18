@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="header">
       <div className="header-logo">
         <Link to="/" className="logo">Blockchain Club</Link>
       </div>
-      <nav className="header-nav">
+      <div className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </div>
+      <nav className={`header-nav ${menuOpen ? 'active' : ''}`}>
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/about" className="nav-link">About</Link>
         <Link to="/blogs" className="nav-link">Blogs</Link>
