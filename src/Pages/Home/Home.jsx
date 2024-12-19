@@ -2,6 +2,8 @@ import React from 'react';
 import './Home.css'; // Importing the styles for the Home page
 import '../../Components/Subscribe/Subscribe'
 import Subscribe from '../../Components/Subscribe/Subscribe';
+// import About from '../About/About';
+import UpcomingEvents from '../../Components/UpcomingEvents/UpcomingEvents';
 // import Eventcard from '../../Components/Eventcard/Eventcard';
 const Home = () => {
     return (
@@ -11,7 +13,11 @@ const Home = () => {
                 <p className="hero-description">
                     A place to explore, learn, and build the future with blockchain technology.
                 </p>
-                <a href="/about" className="hero-button">Learn More About Us</a>
+
+                <a href="../About/About.jsx" className="hero-button"> Learn More About Us</a>
+            </div>
+            <div className="upcomingevent">
+                <UpcomingEvents />
             </div>
 
             <div className="features-section">

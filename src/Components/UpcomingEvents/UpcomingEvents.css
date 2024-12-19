@@ -1,0 +1,193 @@
+/* Heading Style */
+#upcoming-events-slider h2 {
+    font-size: 40px; /* Adjusted for better visibility */
+    font-weight: 600; /* Bold and prominent */
+    color: #1e3a8a; /* Dark blue for a more professional look */
+    text-transform: uppercase; /* Makes the heading stand out */
+    margin-bottom: 3rem; /* Adds space below the heading */
+    text-align: center; /* Centers the heading */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle text shadow for a 3D effect */
+   
+}
+
+
+
+
+/* Event Card Style */
+.upcoming-events-card {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+    /* Lighter shadow */
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 10px;
+    /* Small margin for distance between slides */
+}
+
+/* Hover Effect on Event Cards */
+.upcoming-events-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Event Title Style */
+.upcoming-events-card h3 {
+    font-size: 1.25rem;
+    /* Adjusted size */
+    font-weight: 700;
+    color: #2563eb;
+    /* Slightly lighter blue */
+    margin-bottom: 1rem;
+}
+
+/* Event Details */
+.upcoming-events-card p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+/* Button Style */
+.upcoming-events-card button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.upcoming-events-card button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0px 8px 24px rgba(0, 123, 255, 0.5);
+}
+
+/* Slider Navigation Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 32px;
+    color: #1e3a8a;
+    z-index: 2;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #1e3a8a;
+    font-size: 32px;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+/* Custom Arrow Styling */
+.slick-prev:before {
+    content: '←';
+    font-size: 50px;
+    color: #2563eb;
+}
+
+.slick-next:before {
+    content: '→';
+    font-size: 50px;
+    color: #2563eb;
+}
+
+/* Arrow Hover Effect */
+.slick-prev:hover,
+.slick-next:hover {
+    color: #3b82f6;
+    transform: scale(1.2);
+}
+
+/* Dots Navigation Style */
+.slick-dots li button:before {
+    color: #2563eb;
+    font-size: 16px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #1e3a8a;
+    /* Active dot color */
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #upcoming-events-slider {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .upcoming-events-card {
+        padding: 1.5rem;
+    }
+
+    #upcoming-events-slider h2 {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .slick-prev,
+    .slick-next {
+        font-size: 28px;
+    }
+
+    #upcoming-events-slider h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .upcoming-events-card {
+        padding: 1rem;
+    }
+
+    /* Adjust the arrow size for smaller devices */
+    .slick-prev,
+    .slick-next {
+        font-size: 26px;
+    }
+
+    /* Adjust the slide size for smaller devices */
+    .upcoming-events-card {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #upcoming-events-slider h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .upcoming-events-card {
+        padding: 0.75rem;
+    }
+
+    .slick-prev,
+    .slick-next {
+        font-size: 24px;
+    }
+}

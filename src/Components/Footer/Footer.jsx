@@ -18,7 +18,7 @@ const Footer = () => {
           <Link to="/membership" className="footer-link">Membership</Link>
           <Link to="/contact" className="footer-link">Contact Us</Link>
         </nav>
-        <p className="footer-copyright">© 2025 Blockchain Club. All rights reserved.</p>
+        <p className="footer-copyright">© 2025 Blockchain Club. All rig+hts reserved.</p>
       </div>
     </footer>
   );
